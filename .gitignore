@@ -2,7 +2,8 @@
 pptx_to_pdf/INP/*
 !pptx_to_pdf/INP/.gitkeep
 
-
+jpegs_to_pdf/jpegs/*
+!jpegs_to_pdf/jpegs/.gitkeep
 
 
 # Byte-compiled / optimized / DLL files
