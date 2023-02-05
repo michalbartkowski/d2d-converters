@@ -6,24 +6,6 @@ from PIL import Image
 from PIL.PngImagePlugin import PngInfo
 
 
-def pt():
-    print("test")
-
-'''
-LOADING EXAMPLE
-REQUIRES USER ENVIRONMENTAL VARIABLE: 'SCRIPTS' for location of file
-
-    # Append metadata to figure
-    if os.path.isdir(f"{os.environ['SCRIPTS']}"):
-        sys.path.append(f"{os.environ['SCRIPTS']}")
-        from plot_EXIF import *
-
-        add_exif(f"{path_output}{plot_filename}")
-
-'''
-
-
-
 def add_exif(filename):
     if filename.endswith("jpg"):
         exif_dict = piexif.load(filename)
