@@ -5,6 +5,10 @@ pptx_to_pdf/INP/*
 jpegs_to_pdf/jpegs/*
 !jpegs_to_pdf/jpegs/.gitkeep
 
+merge_to_pdf/INPUT/*
+merge_to_pdf/*.pdf
+!merge_to_pdf/INPUT/.gitkeep
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
