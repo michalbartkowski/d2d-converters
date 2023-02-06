@@ -10,9 +10,9 @@ def add_exif(filename):
     if filename.endswith("jpg"):
         exif_dict = piexif.load(filename)
         new_date = datetime.utcfromtimestamp(time.time()).strftime("%Y-%m-%d %H:%M:%S")
-        #exif_dict["0th"][piexif.ImageIFD.Make] = u'\u004D\u0069\u0063\u0068\u0061\u0142\u0020\u0042\u0061\u0072\u0074\u006B\u006F\u0077\u0073\u006B\u0069'.encode("utf8")
-        exif_dict["0th"][piexif.ImageIFD.Make] = 'Michal Bartkowski'
-        exif_dict["0th"][piexif.ImageIFD.Software] = 'matplotlib'
+        # exif_dict["0th"][piexif.ImageIFD.Make] = u'\u004D\u0069\u0063\u0068\u0061\u0142\u0020\u0042\u0061\u0072\u0074\u006B\u006F\u0077\u0073\u006B\u0069'.encode("utf8")
+        exif_dict["0th"][piexif.ImageIFD.Make] = "Michal Bartkowski"
+        exif_dict["0th"][piexif.ImageIFD.Software] = "matplotlib"
         exif_dict["0th"][piexif.ImageIFD.DateTime] = new_date
         exif_dict["Exif"][piexif.ExifIFD.DateTimeOriginal] = new_date
         exif_dict["Exif"][piexif.ExifIFD.DateTimeDigitized] = new_date
