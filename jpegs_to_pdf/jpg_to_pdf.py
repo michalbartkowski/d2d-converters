@@ -5,8 +5,8 @@ from natsort import natsorted
 
 images_list = []
 for file in os.listdir("./jpegs/"):
-    # if file.endswith(".pdf"):
-    images_list.append(file)
+    if not file.endswith(".gitkeep"):
+        images_list.append(file)
 
 print(sorted(images_list))
 print(natsorted(images_list))
